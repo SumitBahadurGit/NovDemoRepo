@@ -18,27 +18,34 @@ public class CalculatorMain {
 		
 		String input=reader.calcSymbool("\nPlease enter:\n+ For addition\n- For subtraction\nx For multiplication\n/ For division");
 		System.out.println(input);
+		int i=0;
 		if(input.equals("x")) {
 			inp.mult(firstNum, secondNum);
+			i=1;
 			
 			
 		}
 		if(input.equals("/")) {
 			inp.div(firstNum, secondNum);
+			i=1;
 			
 			
 		}
 		if(input.equals("+")) {
 			inp.add(firstNum, secondNum);
+			i=1;
 			
 			
 		}
 		if(input.equals("-")) {
 			inp.sub(firstNum, secondNum);
+			i=1;
 			
 			
 		}
-		
+		if(i==0) {
+			System.out.println("Wrong symbool entered. Try again!");
+		}
 		
 		
 
