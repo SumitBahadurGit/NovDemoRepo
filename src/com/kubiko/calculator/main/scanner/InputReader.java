@@ -14,4 +14,12 @@ public class InputReader {
 			
 			
 		}
+	public String calcSymbool(String message) {
+		System.out.println(message);
+		Scanner sca = new Scanner(System.in);
+		 String input = sca.next();
+		 return input;
+		
+		
+	}
 }
