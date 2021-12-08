@@ -17,7 +17,7 @@ public class CalculatorMain {
 		
 		
 		String input=reader.calcSymbool("\nPlease enter:\n+ For addition\n- For subtraction\nx For multiplication\n/ For division");
-		System.out.println(input);
+		
 		int i=0;
 		if(input.equals("x")) {
 			inp.mult(firstNum, secondNum);
